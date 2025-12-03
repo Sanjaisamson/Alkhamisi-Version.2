@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="./assets/images/alkhamisi_logo-2_page-0001.jpg" />
+    <link rel="apple-touch-icon" href="./assets/images/alkhamisi_logo-2_page-0001.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKII SMARTS Home Automation | Smart Homes & Solar Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+      // Prevent flash of unstyled content and ensure top scroll
+      document.documentElement.style.visibility = 'hidden';
+
+      // Immediately scroll to top
+      window.scrollTo(0, 0);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.documentElement.style.visibility = 'visible';
+        // Ensure scroll to top after DOM loads
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Page Loader Component Placeholder -->
+    <div id="loader-placeholder"></div>
+
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Slider Section -->
+      <section class="slider-section">
+        <div class="slider-container">
+          <!-- Slide 1 - Home Automation -->
+          <div class="slide active">
+            <div class="slide-bg" style="background-image: url('./assets/images/home-automation-2.jpg')"></div>
+            <div class="slide-overlay"></div>
+            <div class="slide-content">
+              <div class="slide-text">
+                <h2 class="slide-title">Smart Home Automation</h2>
+                <p class="slide-description">Transform your home with cutting-edge automation technology. Control lighting, security, climate, and more with intelligent systems designed for modern living.</p>
+                <div class="slide-buttons">
+                  <button class="btn-orange">Explore Automation</button>
+                  <button class="btn-outline">Watch Demo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 - Solar Solutions -->
+          <div class="slide">
+            <div class="slide-bg" style="background-image: url('./assets/images/foreman-businessman-solar-energy-station.jpg')"></div>
+            <div class="slide-overlay green"></div>
+            <div class="slide-content">
+              <div class="slide-text">
+                <h2 class="slide-title">Solar Energy Solutions</h2>
+                <p class="slide-description">Harness the power of the sun with our advanced solar panel installations. Reduce your energy costs while contributing to a sustainable future.</p>
+                <div class="slide-buttons">
+                  <button class="btn-green">Get Solar Quote</button>
+                  <button class="btn-outline">View Projects</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 - Smart Security -->
+          <div class="slide">
+            <div class="slide-bg" style="background-image: url('./assets/images/closeup-cctv-camera-wall.jpg')"></div>
+            <div class="slide-overlay blue"></div>
+            <div class="slide-content">
+              <div class="slide-text">
+                <h2 class="slide-title">Smart Security Systems</h2>
+                <p class="slide-description">Protect your home and family with intelligent security solutions. Advanced cameras, sensors, and monitoring systems for complete peace of mind.</p>
+                <div class="slide-buttons">
+                  <button class="btn-blue">Secure Your Home</button>
+                  <button class="btn-outline">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="slider-dots">
+          <button class="slider-dot active" data-slide="0"></button>
+          <button class="slider-dot" data-slide="1"></button>
+          <button class="slider-dot" data-slide="2"></button>
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-arrow prev" id="prevSlide">
+          <i data-lucide="chevron-left" class="w-6 h-6"></i>
+        </button>
+        <button class="slider-arrow next" id="nextSlide">
+          <i data-lucide="chevron-right" class="w-6 h-6"></i>
+        </button>
+      </section>
+
+      <!-- Our Expertise Section -->
+      <section class="home-expertise">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Our Expertise</span>
+            <h2 class="section-title">Comprehensive Technology Solutions</h2>
+            <p class="section-subtitle">Transforming homes and businesses with cutting-edge technology across multiple domains</p>
+          </div>
+
+          <div class="expertise-list">
+            <!-- Smart Home & Automation -->
+            <div class="expertise-item">
+              <div class="expertise-image">
+                <img src="./assets/images/home-automation-1.jpg" alt="Smart Home Automation" >
+                <div class="expertise-image-overlay">
+                  <i data-lucide="home" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="expertise-content">
+                <h3>Smart Home & Automation</h3>
+                <p>Transform your living space with intelligent automation systems that provide comfort, security, and energy efficiency. Our comprehensive solutions integrate seamlessly with your lifestyle.</p>
+                <ul class="expertise-features">
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Home Automation Systems</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Smart Lighting Controls</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Climate Management</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Voice Control Integration</li>
+                </ul>
+                <a href="services.html#smart-home" class="btn-expertise">Explore Solutions</a>
+              </div>
+            </div>
+
+            <!-- Security & Surveillance -->
+            <div class="expertise-item reverse">
+              <div class="expertise-image">
+                <img src="./assets/images/people-recording-their-house-tour.jpg" alt="Security & Surveillance" >
+                <div class="expertise-image-overlay">
+                  <i data-lucide="shield" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="expertise-content">
+                <h3>Security & Surveillance</h3>
+                <p>Advanced security solutions to protect your property with state-of-the-art monitoring and access control systems. Complete peace of mind with 24/7 professional monitoring.</p>
+                <ul class="expertise-features">
+                  <li><i data-lucide="check" class="w-4 h-4"></i>CCTV Surveillance Systems</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Access Control Solutions</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Intrusion Detection</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Security Monitoring</li>
+                </ul>
+                <a href="services.html#security" class="btn-expertise">Learn More</a>
+              </div>
+            </div>
+
+            <!-- IT & Networking -->
+            <div class="expertise-item">
+              <div class="expertise-image">
+                <img src="./assets/images/young-business-engineer-with-tablet-medium-shot.jpg" alt="IT & Networking" >
+                <div class="expertise-image-overlay">
+                  <i data-lucide="wifi" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="expertise-content">
+                <h3>IT & Networking</h3>
+                <p>Comprehensive IT infrastructure and networking solutions for seamless connectivity and optimal performance. Building robust digital foundations for modern businesses.</p>
+                <ul class="expertise-features">
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Network Infrastructure</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Fiber Optic Systems</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Data & Voice Solutions</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>IT Support Services</li>
+                </ul>
+                <a href="services.html#networking" class="btn-expertise">View Services</a>
+              </div>
+            </div>
+
+            <!-- Renewable Energy -->
+            <div class="expertise-item reverse">
+              <div class="expertise-image">
+                <img src="./assets/images/solar-pannel-installation.jpg" alt="Renewable Energy" >
+                <div class="expertise-image-overlay">
+                  <i data-lucide="sun" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="expertise-content">
+                <h3>Renewable Energy</h3>
+                <p>Sustainable energy solutions including solar systems and energy management for reduced costs and environmental impact. Join the green revolution with cutting-edge technology.</p>
+                <ul class="expertise-features">
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Solar Panel Installation</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Energy Storage Systems</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Grid-Tie Solutions</li>
+                  <li><i data-lucide="check" class="w-4 h-4"></i>Energy Management</li>
+                </ul>
+                <a href="services.html#renewable" class="btn-expertise">Get Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners & Brands Section -->
+      <section class="partners-brands">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">We Build With The Best</span>
+            <h2 class="section-title">Trusted Technology Brands</h2>
+            <p class="section-subtitle">Your project deserves the best. That's why we only work with trusted, world-class brands known for quality and innovation.</p>
+          </div>
+
+          <div class="brands-showcase">
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/sony-brand-logo.gif" alt="Sony" loading="lazy">
+              </div>
+              <h4>Sony</h4>
+              <p>Professional Audio & Video Solutions</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/Bosch-Logo.png" alt="Bosch" loading="lazy">
+              </div>
+              <h4>Bosch</h4>
+              <p>Security & Building Technologies</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/Hikvision-Logo.png" alt="HikVision" loading="lazy">
+              </div>
+              <h4>HikVision</h4>
+              <p>Video Surveillance Systems</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/Schneider_Electric-Logo.wine.png" alt="Schneider Electric" loading="lazy">
+              </div>
+              <h4>Schneider Electric</h4>
+              <p>Energy Management & Automation</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/Cisco-Logo-2006-present.png" alt="Cisco" loading="lazy">
+              </div>
+              <h4>Cisco</h4>
+              <p>Networking & Communication</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/Honeywell-Logo.png" alt="Honeywell" loading="lazy">
+              </div>
+              <h4>Honeywell</h4>
+              <p>Building Automation Systems</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/Siemens-logo.png" alt="Siemens" loading="lazy">
+              </div>
+              <h4>Siemens</h4>
+              <p>Industrial Automation</p>
+            </div>
+
+            <div class="brand-item">
+              <div class="brand-logo">
+                <img src="./assets/images/LG_logo_(2014).svg.png" alt="LG" loading="lazy">
+              </div>
+              <h4>LG</h4>
+              <p>Smart Home Appliances</p>
+            </div>
+          </div>
+
+          <!-- <div class="partners-stats">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Global Partners</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">Products Available</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">15+</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- Integrated Solutions Section -->
+      <section class="integrated-solutions">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Advanced Technology</span>
+            <h2 class="section-title">Integrated Smart Solutions</h2>
+            <p class="section-subtitle">Experience seamless connectivity and intelligent automation that transforms your daily life</p>
+          </div>
+
+          <div class="solutions-showcase">
+            <!-- Voice Control & AI Integration -->
+            <div class="solution-feature">
+              <div class="solution-visual">
+                <div class="solution-image-container">
+                  <img src="./assets/images/modern-living-room-interior-with-large-tv-screen-displaying-home-automation-system.jpg" alt="Voice Control & AI Integration" >
+                  <div class="solution-overlay">
+                    <div class="solution-icon">
+                      <i data-lucide="mic" class="w-16 h-16"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-badge">AI-Powered</div>
+                <h3>Voice Control & AI Integration</h3>
+                <p>Transform your home with cutting-edge voice commands and artificial intelligence. Control every aspect of your smart home with natural speech, while AI learns your preferences to anticipate your needs.</p>
+                <div class="solution-benefits">
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Natural Language Processing</span>
+                  </div>
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Predictive Automation</span>
+                  </div>
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Multi-Device Integration</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mobile App and Remote Access -->
+            <div class="solution-feature">
+              <div class="solution-visual">
+                <div class="solution-image-container">
+                  <img src="./assets/images/representation-user-experience-interface-design.jpg" alt="Mobile App Control">
+                  <div class="solution-overlay">
+                    <div class="solution-icon">
+                      <i data-lucide="smartphone" class="w-16 h-16"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-badge">Remote Control</div>
+                <h3>Mobile App & Remote Access</h3>
+                <p>Stay connected to your home from anywhere in the world. Our intuitive mobile app provides complete control over all your smart systems with real-time monitoring and instant notifications.</p>
+                <div class="solution-benefits">
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Real-time System Monitoring</span>
+                  </div>
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Instant Push Notifications</span>
+                  </div>
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Secure Cloud Connectivity</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Energy Management Systems -->
+            <div class="solution-feature">
+              <div class="solution-visual">
+                <div class="solution-image-container">
+                  <img src="./assets/images/solar-pannel-installation.jpg" alt="Energy Management" >
+                  <div class="solution-overlay">
+                    <div class="solution-icon">
+                      <i data-lucide="zap" class="w-16 h-16"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="solution-content">
+                <div class="solution-badge">Eco-Smart</div>
+                <h3>Energy Management Systems</h3>
+                <p>Optimize your energy consumption with intelligent monitoring and automated controls. Our advanced systems reduce costs while supporting sustainable living through smart energy distribution.</p>
+                <div class="solution-benefits">
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Smart Grid Integration</span>
+                  </div>
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Usage Analytics & Reports</span>
+                  </div>
+                  <div class="benefit-point">
+                    <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    <span>Automated Cost Optimization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-badge">Get In Touch</span>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Ready to start your project? Get in touch with our experts</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="map-pin" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Post Box No:1341, PC 112<br>Muscat, Sultanate Of Oman</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="phone" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+968-71755014<br>+968-71755016</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>info@alkhamisiintl.com<br>contact@alkhamisiintl.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i data-lucide="globe" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4>Website</h4>
+                  <p>www.alkhamisiintl.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                  <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option value="home-automation">Home Automation</option>
+                    <option value="solar">Solar Solutions</option>
+                    <option value="security">Security Systems</option>
+                    <option value="networking">IT Networking</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="./assets/js/loader.js"></script>
+    <script type="module" src="./assets/js/header.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Contact Form Handler
+      document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+
+        if (contactForm) {
+          contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = new FormData(contactForm);
+            const data = {
+              name: formData.get('name'),
+              email: formData.get('email'),
+              phone: formData.get('phone') || 'Not provided',
+              service: formData.get('service'),
+              message: formData.get('message')
+            };
+
+            // Format service name for display
+            const serviceNames = {
+              'home-automation': 'Home Automation',
+              'solar': 'Solar Solutions',
+              'security': 'Security Systems',
+              'networking': 'IT Networking',
+              'other': 'Other Services'
+            };
+
+            const serviceName = serviceNames[data.service] || data.service;
+
+            // Create email content with professional tone
+            const subject = `Service Inquiry: ${serviceName} - ${data.name}`;
+
+            const emailBody = `
+Dear Alkhamisi International Team,
+
+I hope this message finds you well. I am writing to express my interest in your services and would appreciate the opportunity to discuss my requirements with your team.
+
+Client Information:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Service of Interest: ${serviceName}
+
+Message:
+${data.message}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+I would greatly appreciate the opportunity to discuss my requirements in more detail and learn about how Alkhamisi International can assist with my project. Please feel free to contact me at your earliest convenience to schedule a consultation.
+
+Thank you for your time and consideration. I look forward to hearing from you soon.
+
+Best regards,
+${data.name}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+This inquiry was submitted through: Alkhamisi International Website
+Submission Date: ${new Date().toLocaleDateString()}
+            `.trim();
+
+            // Create mailto link
+            const mailtoLink = `mailto:info@alkhamisiintl.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+            // Show success message
+            showContactSuccessMessage();
+
+            // Open email client
+            window.location.href = mailtoLink;
+
+            // Reset form after short delay
+            setTimeout(() => {
+              contactForm.reset();
+            }, 2000);
+          });
+
+          function showContactSuccessMessage() {
+            // Create success message
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success-message';
+            successDiv.innerHTML = `
+              <div class="success-content">
+                <i data-lucide="check-circle" class="w-8 h-8"></i>
+                <h3>Message Prepared Successfully!</h3>
+                <p>Your email client will open with your inquiry details. Please send the email to complete your request.</p>
+              </div>
+            `;
+
+            // Insert after form
+            contactForm.parentNode.insertBefore(successDiv, contactForm.nextSibling);
+
+            // Initialize icons for the new element
+            lucide.createIcons();
+
+            // Remove message after 5 seconds
+            setTimeout(() => {
+              if (successDiv.parentNode) {
+                successDiv.parentNode.removeChild(successDiv);
+              }
+            }, 5000);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
