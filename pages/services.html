@@ -86,7 +86,7 @@
 
           <div class="detailed-services-grid">
             <!-- Automation Services -->
-            <div class="service-card automation">
+            <div id="automation" class="service-card automation">
               <div class="service-header">
                 <div class="service-icon">
                   <i data-lucide="home" class="w-8 h-8"></i>
@@ -105,7 +105,7 @@
             </div>
 
             <!-- Security Services -->
-            <div class="service-card security">
+            <div id="security" class="service-card security">
               <div class="service-header">
                 <div class="service-icon">
                   <i data-lucide="video" class="w-8 h-8"></i>
@@ -160,7 +160,7 @@
             </div>
 
             <!-- Networking Services -->
-            <div class="service-card networking">
+            <div id="networking" class="service-card networking">
               <div class="service-header">
                 <div class="service-icon">
                   <i data-lucide="radio" class="w-8 h-8"></i>
@@ -215,7 +215,7 @@
             </div>
 
             <!-- Energy Services -->
-            <div class="service-card energy">
+            <div id="renewable" class="service-card energy">
               <div class="service-header">
                 <div class="service-icon">
                   <i data-lucide="sun" class="w-8 h-8"></i>
@@ -682,6 +682,29 @@ Submission Date: ${new Date().toLocaleDateString()}
               }
             }, 5000);
           }
+        }
+      });
+
+      // Smooth scroll to anchor with offset for fixed header
+      window.addEventListener('DOMContentLoaded', () => {
+        // Check if there's a hash in the URL
+        if (window.location.hash) {
+          setTimeout(() => {
+            const targetId = window.location.hash.substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+              // Get the fixed header height
+              const headerHeight = document.querySelector('header')?.offsetHeight || 80;
+              const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+              const offsetPosition = elementPosition - headerHeight - 20; // 20px extra padding
+              
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          }, 500); // Wait for page to fully load
         }
       });
     </script>
