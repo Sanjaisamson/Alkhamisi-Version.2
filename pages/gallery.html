@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="../assets/images/alkhamisi_logo-2_page-0001.jpg" />
+    <link rel="apple-touch-icon" href="../assets/images/alkhamisi_logo-2_page-0001.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Gallery - AKII SMARTS | Our Completed Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script>
+      // Prevent flash of unstyled content and ensure top scroll
+      document.documentElement.style.visibility = 'hidden';
+
+      // Immediately scroll to top
+      window.scrollTo(0, 0);
+
+      document.addEventListener('DOMContentLoaded', () => {
+        document.documentElement.style.visibility = 'visible';
+        // Ensure scroll to top after DOM loads
+        window.scrollTo(0, 0);
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Page Loader Component Placeholder -->
+    <div id="loader-placeholder"></div>
+
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Gallery Hero Section
+      <section class="gallery-hero">
+        <div class="gallery-hero-bg">
+          <div class="circuit-pattern"></div>
+        </div>
+        <div class="container">
+          <div class="gallery-hero-content">
+            <h1 class="gallery-hero-title">Project Gallery</h1>
+            <p class="gallery-hero-subtitle">Our Success Stories</p>
+            <p class="gallery-hero-description">
+              Explore our portfolio of completed projects showcasing innovative solutions in home automation, 
+              security systems, solar solutions, and IT networking. Each project represents our commitment to 
+              excellence and customer satisfaction.
+            </p>
+            <div class="gallery-hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-number">500+</div>
+                <div class="hero-stat-label">Projects</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">100%</div>
+                <div class="hero-stat-label">Satisfaction</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-number">15+</div>
+                <div class="hero-stat-label">Years</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Gallery Section -->
+      <section class="gallery-section">
+        <div class="container">
+          <div class="gallery-section-header">
+            <span class="gallery-badge">Our Work</span>
+            <h2 class="gallery-section-title">Project Showcase</h2>
+            <p class="gallery-section-subtitle">
+              A visual journey through our completed smart home automation project
+            </p>
+          </div>
+
+          <!-- Gallery Collage Grid -->
+          <div class="gallery-collage" id="gallery-grid">
+            <!-- Gallery images will be dynamically loaded by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Section -->
+      <section class="gallery-cta">
+        <div class="container">
+          <div class="gallery-cta-content">
+            <h2>Ready to Start Your Project?</h2>
+            <p>Let's bring your vision to life with our innovative smart solutions</p>
+            <div class="gallery-cta-buttons">
+              <a href="contact.html" class="btn-cta-primary">
+                <i data-lucide="mail"></i>
+                Contact Us
+              </a>
+              <a href="services.html" class="btn-cta-secondary">View Our Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <button class="lightbox-close" id="lightbox-close">
+        <i data-lucide="x"></i>
+      </button>
+      <button class="lightbox-prev" id="lightbox-prev">
+        <i data-lucide="chevron-left"></i>
+      </button>
+      <button class="lightbox-next" id="lightbox-next">
+        <i data-lucide="chevron-right"></i>
+      </button>
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Project Image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/loader.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/gallery.js"></script>
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

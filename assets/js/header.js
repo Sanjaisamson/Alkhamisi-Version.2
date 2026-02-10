@@ -28,6 +28,7 @@ function getCurrentPageName() {
     'index.html': 'index',
     'about.html': 'about',
     'services.html': 'services',
+    'gallery.html': 'gallery',
     'career.html': 'career',
     'contact.html': 'contact',
     '': 'index' // Handle root path
@@ -56,6 +57,7 @@ function setNavigationUrls() {
     home: isInPagesDir ? '../index.html' : 'index.html',
     about: isInPagesDir ? 'about.html' : 'pages/about.html',
     services: isInPagesDir ? 'services.html' : 'pages/services.html',
+    gallery: isInPagesDir ? 'gallery.html' : 'pages/gallery.html',
     career: isInPagesDir ? 'career.html' : 'pages/career.html',
     contact: isInPagesDir ? 'contact.html' : 'pages/contact.html',
     logo: isInPagesDir ? '../assets/images/alkhamisi_logo-2_page-0001.jpg' : 'assets/images/alkhamisi_logo-2_page-0001.jpg'
